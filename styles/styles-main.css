@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/*SE DECRIBEN LA CABEZERA, EL CUERPO Y EL PIE DE PÁGINA DE LA PÁGINA PRINCIPAL*/
+
+#cabeza-main {
+    background-color: rgb(237, 227, 227);
+    font-family: serif;
+    font-size: 135%;
+    }
+  
+#cuerpo-main {
+  background-color: rgb(237, 227, 227);
+  filter:alpha(opacity=90);
+  opacity:0.9;
+  font-family: serif;
+  font-size: 135%;
+  padding: 3% 3% 3% 3%;
+  margin-left: 5%;
+  margin-right: 5%; 
+    }
+
+.radio {
+  display: inline-block;
+}
+
+#radio1, #radio2, #radio3, #radio4 {
+  display: none;
+}
+
+.container { 
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  margin: 5% auto;
+  opacity: 1.0;
+}
+
+.diapositivas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  background: rgb(216, 138, 138);
+  overflow: hidden;
+  border:solid 1px rgb(239, 114, 114);
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
+  border-radius: 25px;
+  opacity: 1.0;
+}
+
+.diapo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  opacity: 0;	
+}
+
+.diapo img {
+width: 100%;
+height: 85%;
+object-fit: contain;
+transform: scale(1.2);
+transition: 1.3s;
+opacity: 1.0;
+}
+
+.dots {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots label {
+  width: 15px;
+  height: 15px;
+  background: rgb(136, 57, 57);
+  margin: 0 10px;
+  border-radius: 50%;
+  opacity: 1.0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.dots label:hover {
+  opacity: 0.7;
+}
+
+#radio1:checked ~ #diapo-1,
+#radio2:checked ~ #diapo-2,
+#radio3:checked ~ #diapo-3,
+#radio4:checked ~ #diapo-4 {
+  opacity: 1;
+}
+
+#radio1:checked ~ #diapo-1 img,
+#radio2:checked ~ #diapo-2 img,
+#radio3:checked ~ #diapo-3 img,
+#radio4:checked ~ #diapo-4 img {
+transform: scale(1);
+}
+.table-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+.PiTabla {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+
+.PiTabla thead tr {
+  background-color: #ee4a60;
+  color: #ffffff;
+  text-align: left;
+  opacity: 1;
+}
+
+.PiTabla th,
+.PiTabla td {
+    padding: 12px 15px;
+    opacity: 1;
+}
+
+.PiTabla tbody tr {
+  border-bottom: 1px solid #dddddd;
+  opacity: 1;
+}
+
+.PiTabla tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+  opacity: 1;
+}
+
+.PiTabla tbody tr:last-of-type {
+  border-bottom: 2px solid #ee4a60;
+  opacity: 1;
+}
+
+.intro2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100%;
+  opacity: 1;
+}
+
+ol {
+  counter-reset: li; 
+  list-style: none; 
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(223, 132, 132, 0.5);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 90%;
+}
+
+ol a {
+  position: relative;
+  display: block;
+  padding: .5em .5em .5em 3em;
+  margin: .6em 0;
+  background: #DAD2CA;
+  color: rgb(164, 88, 88);
+  text-decoration: none;
+  border-radius: .3em;
+  transition: .3s ease-out;
+  margin-left: 1em;
+  margin-right: 3em;
+}
+
+ol a:hover { background: #E9E4E0; }
+ol a:hover:before { transform: rotate(360deg); }
+ol a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #ef8585;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+  margin-left: -2.4em;
+}
+
+#list-title {
+  margin-left: 2%;
+}
+

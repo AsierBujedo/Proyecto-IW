@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@media only screen and (min-width: 961px) {
+  #cabeza-main {
+      background-color: rgb(237, 227, 227);
+      font-family: serif;
+      font-size: 135%;
+  }
+
+  .cuerpo-pi {
+      background-color: rgb(237, 227, 227);
+      filter:alpha(opacity=90);
+      opacity:0.9;
+      font-family: serif;
+      font-size: 135%;
+      padding: 3% 3% 3% 3%;
+      margin-left: 5%;
+      margin-right: 5%; 
+  }
+}
+
+/*CUERPO DE LAS PAGINAS DE LAS PLACAS */
+
+.specs {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 90%;
+}
+
+.pi-img {
+  position: flex;
+    padding: 3% 3% 3% 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.pi-img img {
+  padding: 3% 3% 3% 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 0%;
+  opacity: 0.9;
+  width: 75%;
+  height: 75%;
+}

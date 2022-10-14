@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = 'es'>
+    <head>
+        <meta charset="utf-8">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="styles/styles-CU.css">
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    </head>
+    <body>
+        <header id="cabeza-main"><br>
+            <div class="navbar">   
+                <div id="element1">
+                    <a href="main.html">Inicio</a>
+                </div><div id="element2">
+                    <a href="pi3.html">Pi 3</a>
+                    <div id="e2"></div>
+                </div><div class="element3">
+                    <a href="pi4.html">Pi 4</a>
+                    <div id="e3"></div>
+                </div><div id="element4">
+                    <a href="zero.html">Pi Zero</a>
+                    <div id="e0"></div>
+                </div><div id="element5">
+                    <a href="pi400.html">Pi 400</a>
+                    <div id="e400"></div>
+                </div><div id="element6">
+                    <a  class="active" href="contact-us.html">Contacto</a>
+                    <div id="eCU"></div>
+                </div>
+              </div>
+        </header>
+
+        <main class="cuerpo-contacto">
+            <div id="formulario">
+                <form>
+                    <h2>¿Alguna duda? ¡Contáctame!</h2><br><br>
+                    Nombre*<br>
+                    <input type="text" name="Nombre" placeholder="Nombre"><br>
+                    Email*<br>
+                    <input type="email" name="email" placeholder="Email"><br>
+                    Teléfono*<br>
+                    <input type="tel" name="tel" placeholder="+34 6XX XX XX XX"><br>
+                    Fecha de nacimiento*<br>
+                    <input type="date" name="ncto"><br>
+                    Género*<br>
+                    <select name="genero">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="otro">Otro</option>
+                    </select><br>
+                    ¿Desea recibir información sobre ofertas y promociones?*<br><br>
+                    <input type="radio" name="ofertas" value="si"><label id="l">Sí</label><br><br>
+                    <input type="radio" name="ofertas" value="No"><label id="l2">No</label><br>
+                    <br>Asunto*<br>
+                    <input type="text" name="asunto" placeholder="Asunto"><br>
+                    Mensaje*<br>
+                    <textarea name="mensaje" placeholder=" Mensaje"></textarea><br>
+                    <label id="lc">Acepto la política de privacidad </label><input type="checkbox"><br><br>
+                    <div class="container">
+                        <button>
+                            <span id="send">Enviar</span>
+                        </button>
+                    </div>
+                    <h2 id="l3">¡Muchas gracias por tu mensaje ;) !</h2>
+                </form>
+            </div>
+        </main>
+
+        <footer class="pie-main">
+          <div class="wrapper">
+            <h3>Nos puedes encontrar en: </h3>
+            <a href="https://www.facebook.com/" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="https://www.twitter.com/" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="https://www.instagram.com/" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="https://www.github.com/" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="https://www.youtube.com/" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+            <br><br><p>© 2022 - Todos los derechos reservados</p>
+          </div>
+        </footer>
+    </body>
+</html>

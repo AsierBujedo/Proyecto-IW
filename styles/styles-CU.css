@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+#cabeza-main {
+    background-color: rgb(237, 227, 227);
+    font-family: serif;
+    font-size: 135%;
+}
+
+/*CUERPO CONTACTO*/
+
+.cuerpo-CU {
+  background-color: rgb(237, 227, 227);
+  filter:alpha(opacity=90);
+  opacity:0.9;
+  font-family: serif;
+  font-size: 135%;
+}
+
+form {
+    width:60%;
+    padding:2%;
+    border-radius:25px;
+    margin:auto;
+    background-color:rgb(233, 213, 213);
+    filter:alpha(opacity=90);
+    opacity:0.9;
+  }
+  
+form label{
+    width:72px;
+    font-weight:bold;
+    opacity: 1;
+}
+
+  form input[type="text"],
+  form input[type="date"],
+  form input[type="tel"],
+  form input[type="mail"],
+  form input[type="email"]{
+    width:75%;
+    padding:6px 20px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;
+    margin:8px 0;
+    display:inline-block;
+    opacity: 1;
+  }
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #e79393;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border: 2px solid #555555;
+  border-radius: 3px;
+  background-color: white;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #e79393;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+select {
+  width: 100%;
+  padding: 6px 20px;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  width:75%;
+  border: 1px solid #f6f6f6;
+  border-radius:3px;
+  margin:8px 0;
+  display:inline-block;
+  opacity: 1;
+}
+
+#l, #l2 {
+  margin-left: 5%;
+}
+
+#l3 {
+  margin-left: 28%;
+}
+
+#lc {
+  margin-right: 5%;
+}
+
+  button {
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 125%;
+    cursor: pointer;
+    margin: 2% 2%;
+    background: #1A2929;
+    opacity: 1;
+  }
+
+  #send {
+    display: block;
+    padding: 10px 60px;
+    opacity: 1;
+  }
+
+  button::before,
+  button::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #e54b4b;
+    opacity: 1;
+  }
+
+  #send::before, #send::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #e54b4b;
+    opacity: 1;
+  }
+
+  button:hover::before, button:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  button:hover #send::before, button:hover #send::after {
+    height: 100%;
+    opacity: 1;
+  }
+
+  button::after{
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+    opacity: 1;
+  }
+
+  button #send::after{
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+    opacity: 1;
+  }
+
+  button::before{
+    right: 0;
+    top: 0;
+    transition-duration: 0.4s;
+    opacity: 1;
+  }
+
+  button #send::before {
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+    opacity: 1;
+  }
+
+  textarea {
+    width:100%;
+    height:100px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;			
+    margin:8px 0px;
+    resize:none;
+    display:block;
+    opacity: 1;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *:focus,
+  *:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
